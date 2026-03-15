@@ -25,29 +25,41 @@
 <title>Tournament Results</title>
 
 <style>
-    html, body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
+    html, body{
+        margin:0;
+        padding:0;
+        height:100%;
+        width:100%;
+        overflow:hidden;
         font-family: Arial, sans-serif;
+        background:#000;
     }
 
-    iframe {
-        border: none;
-        width: 100%;
-        height: 100%;
+    .iframe-container{
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+    }
+
+    iframe{
+        width:100%;
+        height:100%;
+        border:none;
     }
 </style>
 </head>
 
 <body>
 
-<iframe src="https://tournament-result.great-site.net/" 
-        title="Tournament Results"
+<div class="iframe-container">
+    <iframe 
+        src="https://tournament-result.great-site.net/?embed=true"
+        frameborder="0"
         allowfullscreen>
-</iframe>
+    </iframe>
+</div>
 
 </body>
 </html>
